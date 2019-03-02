@@ -1,0 +1,26 @@
+{
+  "name": "rollup-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "dev": "rollup -c rollup.config.dev.js -w",
+    "build": "yarn clean && rollup -c rollup.config.js",
+    "watch": "rollup -cw"
+  },
+  "author": "Ryan Edwards",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^1.4.0",
+    "rollup-plugin-copy-glob": "^0.3.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.19.3",
+    "typescript": "^3.3.3333"
+  }
+}
